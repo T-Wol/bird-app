@@ -1,0 +1,30 @@
+<!-- views/create-bird.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Bird</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2>Create a New Bird</h2>
+    <form action="/birds/create" method="post">
+      <div class="form-group">
+        <label for="species">Species:</label>
+        <input type="text" class="form-control" id="species" name="species" required>
+      </div>
+      <div class="form-group">
+        <label for="nickname">Nickname:</label>
+        <input type="text" class="form-control" id="nickname" name="nickname" required>
+      </div>
+      <div class="form-group">
+        <label for="status">Status:</label>
+        <input type="text" class="form-control" id="status" name="status" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Create Bird</button>
+    </form>
+  </div>
+</body>
+</html>
